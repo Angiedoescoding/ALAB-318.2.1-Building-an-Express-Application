@@ -9,7 +9,11 @@ module.exports = function(data) {
         <body>
             <h3>This is the 2nd view engine with a form</h3>
             <p>The anchor tag below will return you to the home page ("/" route).</p>
-            <a href="/index.js"></a>
+            <a href="/index">Home</a>
+            <br/>
+            <a href="/download">Download the picture</a>
+            <br/>
+            <img src="/public/function.jpg" alt="koala">
         </body>
         </html>`;
 }

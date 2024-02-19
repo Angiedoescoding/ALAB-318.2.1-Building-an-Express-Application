@@ -32,8 +32,15 @@ app.get ("/about", (req, res) => {
     res.send(abooutToHTML);                                 // sending the rendered html as the response
 })
 
+
 // Part 3 - Exploring Response Options (Within one of your views, include an image that is stored locally in your project's file system. In order for this image to be served, you will need to use the Express static middleware, as shown in the lesson.)
 
+app.get("/download", (req, res) => {
+    const file = `public/function.jpg`;
+    res.download(file);
+})
+
+app.use(express.static("public"))
 
 // Part 4 - Open Exploration
 
