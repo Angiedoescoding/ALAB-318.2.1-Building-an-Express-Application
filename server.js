@@ -9,11 +9,11 @@ const app = express();                      // we create an application by runni
 let PORT = 3000;
 
 // Part 2 - Middleware
-app.use(express.urlencoded({ extended: false}))  // setting up the middleware to parse incoming url-encoded form data based on the assigment
+app.use(express.urlencoded({ extended: false}));  // setting up the middleware to parse incoming url-encoded form data based on the assigment
 
 
 // 3 Setting a view engine (Create at least two different view templates for your chosen view engine.)
-app.set("view engines", "js")          // setting JS file where we will be viewing data (as the view engines for the content)
+app.set("view engines", "js");          // setting JS file where we will be viewing data (as the view engines for the content)
 
 //Routes (aka Exploring Response Options)
 app.get('/', (req, res) =>{
